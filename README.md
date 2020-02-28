@@ -1,4 +1,4 @@
-# Danny-React
+# React-ts-Starter
 
 Use `npm init` in parent directory.
 
