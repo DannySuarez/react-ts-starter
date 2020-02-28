@@ -1,12 +1,12 @@
 {
-  "name": "create-ts-starter",
+  "name": "create-ts-template",
   "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/DannySuarez/react-ts-starter"
   },
   "bin": {
-    "create-ts-starter": "./index.js"
+    "create-ts-template": "./index.js"
   },
   "description": "Use `npm init` in parent directory.",
   "main": "index.js",
