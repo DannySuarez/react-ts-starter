@@ -7,7 +7,7 @@ function setupApp(folder) {
   const App = `
 import React from 'react';
 
-export default function App() {
+export default function App(): JSX.Element {
   return <h1>Hello World</h1>;
 }
   `.trimStart();

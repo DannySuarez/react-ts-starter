@@ -4,7 +4,7 @@ const { execSync } = require('child_process');
 function initGit(folder) {
   console.log(chalk.green('Initializing git'));
 
-  execSync('so it begins', {
+  execSync('git init', {
     cwd: folder,
     stdio: 'inherit'
   });

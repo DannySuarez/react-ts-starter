@@ -5,6 +5,7 @@ const path = require('path');
 function setupWebpack(folder) {
   console.log(chalk.green('Setting up webpack.config.js'));
   const webpackConfig = `
+/* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
@@ -16,6 +17,9 @@ module.exports = {
   output: {
     filename: 'bundle.[hash].js',
     publicPath: '/'
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js']
   },
   devServer: {
     port: 7890,
