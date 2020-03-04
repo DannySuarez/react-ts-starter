@@ -8,7 +8,8 @@ function setupBabel(folder) {
   const babel = {
     presets: [
       '@babel/preset-env',
-      '@babel/preset-react'
+      '@babel/preset-react',
+      '@babel/preset-typescript'
     ],
     plugins: [
       '@babel/plugin-proposal-class-properties'

@@ -10,19 +10,22 @@ function setupEslint(folder) {
       'ecmaVersion': 9,
       'sourceType': 'module'
     },
-    'parser': 'babel-eslint',
+    'parser': '@typescript-eslint/parser',
     'env': {
       'es6': true,
       'browser': true,
       'jest': true
     },
     'plugins': [
+      '@typescript-eslint/parser',
       'babel',
       'react'
     ],
     'extends': [
       'eslint:recommended',
-      'plugin:react/recommended'
+      'plugin:react/recommended',
+      'plugin:@typescript-eslint-recommended',
+      'plugin:@typescript-eslint/recommended'
     ],
     'rules': {
       'no-console': 'warn',
