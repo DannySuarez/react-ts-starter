@@ -17,14 +17,14 @@ function setupEslint(folder) {
       'jest': true
     },
     'plugins': [
-      '@typescript-eslint/parser',
+      '@typescript-eslint',
       'babel',
       'react'
     ],
     'extends': [
       'eslint:recommended',
       'plugin:react/recommended',
-      'plugin:@typescript-eslint-recommended',
+      'plugin:@typescript-eslint/eslint-recommended',
       'plugin:@typescript-eslint/recommended'
     ],
     'rules': {
