@@ -19,7 +19,7 @@ const setupTravis = require('./setups/setupTravis');
 const initGit = require('./setups/initGit');
 const initTest  = require('./setups/initTest');
 const setupPublic = require('./setups/setupPublic');
-
+const setupTypeScriptConfig = require('./setups/setupTypeScriptConfig');
 
 const args = process.argv;
 const folderName = args[args.length - 1];
@@ -39,7 +39,7 @@ setupTravis(folder);
 initGit(folder);
 initTest(folder);
 setupPublic(folder);
-
+setupTypeScriptConfig(folder);
 
 function setupSrc(folder) {
   console.log(chalk.green('Setting up src'));
